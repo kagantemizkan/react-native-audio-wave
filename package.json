@@ -1,5 +1,5 @@
 {
-  "name": "react-native-audio-wave",
+  "name": "@kaannn/react-native-waveform",
   "version": "0.1.0",
   "description": "Create native waveforms ",
   "source": "./src/index.tsx",
