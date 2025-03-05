@@ -1,6 +1,6 @@
 {
   "name": "@kaannn/react-native-waveform",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Create native waveforms ",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
