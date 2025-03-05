@@ -1,9 +1,14 @@
-import { requireNativeComponent, StyleSheet } from 'react-native';
+import {
+  requireNativeComponent,
+  StyleSheet,
+  type ViewStyle,
+} from 'react-native';
 
 const NativeAudioWaveView = requireNativeComponent('AudioWaveView');
 
+// Extend the props for the native component
 type AudioWaveViewProps = {
-  style?: any;
+  style?: ViewStyle;
   audioSource?: string;
   progress?: number;
   maxProgress?: number;
@@ -41,14 +46,16 @@ const AudioWaveView = ({
 
   return (
     <NativeAudioWaveView
-      style={[styles.container, style]}
+      // @ts-ignore: Suppress TS error for this line
+      style={StyleSheet.compose(styles.container, style)}
+      // Ensure style is passed correctly
       progress={progress}
       waveWidth={waveWidth}
       waveGap={waveGap}
       waveBackgroundColor={waveBackgroundColor}
       waveProgressColor={waveProgressColor}
-      audioFileUri={audioSource}
-      {...rest}
+      audioFileUri={audioSource} // Pass the audio source here
+      {...rest} // Spread any other remaining props
     />
   );
 };
