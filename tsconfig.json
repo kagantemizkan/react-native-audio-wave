@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "declaration": false,
     "rootDir": ".",
     "paths": {
       "react-native-audio-wave": ["./src/index"]
