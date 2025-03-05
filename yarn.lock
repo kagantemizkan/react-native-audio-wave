@@ -2227,9 +2227,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kaannn/react-native-waveform@workspace:.":
+"@kagantemizkan/react-native-waveform@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@kaannn/react-native-waveform@workspace:."
+  resolution: "@kagantemizkan/react-native-waveform@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^17.0.2
     "@evilmartians/lefthook": ^1.5.0

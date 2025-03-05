@@ -1,5 +1,5 @@
 {
-  "name": "@kaannn/react-native-waveform",
+  "name": "@kagantemizkan/react-native-waveform",
   "version": "0.1.0",
   "description": "Create native waveforms ",
   "source": "./src/index.tsx",
